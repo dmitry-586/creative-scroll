@@ -1,0 +1,40 @@
+@import 'src/hero/_hero.scss';
+@import 'src/portfolio/_portfolio.scss';
+@import 'src/portfolio/_textBlock.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --color-header: #f4efec;
+    --color-text: #cdc6c3;
+    --gallery-gap: calc(var(--index) * 10)
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../public/fonts/raleway-regular.woff2);
+}
+@font-face {
+    font-family: Outfit;
+    src: url(../public/fonts/outfit-regular.woff2);
+}
+
+body {
+    background: rgb(31, 28, 28);
+    color: #fafafa;
+    font-family: Raleway;
+    overflow-x: hidden;
+}
+
+h1,h2,h3 {
+    font-family: Outfit;
+}
+
+.content .hero .hero_container .gallery > * {
+    will-change: transform;
+}

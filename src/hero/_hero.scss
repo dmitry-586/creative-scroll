@@ -1,0 +1,24 @@
+.hero {
+
+    &_img {
+        width: calc(var(--index) * 37);
+        position: absolute;
+        left: 37vw;
+        top: 8vh;
+        z-index: -1;
+    }
+    &_container {
+        padding: 0 7vw;
+    }
+    &_header {
+        height: 100vh;
+    }
+    &_title {
+        font-size: calc(var(--index) * 8);
+        position: absolute;
+        width: min-content;
+        bottom: 12vh;
+        line-height: .9;
+    }
+}
+

@@ -1,0 +1,26 @@
+.gallery {
+    display: flex;
+    padding: calc(var(--index) * 8) 7vw;
+
+    & > * {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &_item {
+        max-width: calc(var(--index) * 21);
+        margin-bottom: var(--gallery-gap);
+        max-height: 180vh;
+        border-radius: 8px;
+    }
+
+    &_left {
+        margin-top: calc(var(--gallery-gap) * 1.7);
+    }
+    &_right &_item {
+        margin: 0;
+        margin-top: calc(var(--gallery-gap));
+    }
+}
